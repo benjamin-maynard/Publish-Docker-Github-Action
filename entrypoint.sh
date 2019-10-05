@@ -38,7 +38,7 @@ function translateTag() {
 }
 
 translateTag
-DOCKERNAME="${INPUT_NAME}:${TAG}"
+DOCKERNAME="${INPUT_NAME}-${BRANCH}:${TAG}"
 
 if [ ! -z "${INPUT_WORKDIR}" ]; then
   cd "${INPUT_WORKDIR}"
